@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="h4 mb-3">Keramaian Stulo</h1>
+{% for l in lokasi %}
+  <div class="card mb-3">
+    <div class="card-body">
+      <h2 class="h5">{{ l["nama"] }}</h2>
+      <span class="badge bg-secondary">Belum ada data</span>
+    </div>
+  </div>
+{% endfor %}
+{% endblock %}
